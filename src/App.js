@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ArtistSearch from "./Components/ArtistSearch";
 import AlbumResults from "./Components/AlbumResults";
+
 import Header from "./Components/Header";
 import "./app.css";
 

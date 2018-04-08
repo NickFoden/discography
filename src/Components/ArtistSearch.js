@@ -46,7 +46,7 @@ class ArtistSearch extends Component {
               name="artist"
               value={this.state.artist}
               onChange={this.handleChange}
-              placeholder="search for a musician and see their albums"
+              placeholder="search for bands or artists & see their albums"
             />
             <button className="button" type="submit">
               Search

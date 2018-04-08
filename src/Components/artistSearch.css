@@ -13,6 +13,7 @@
   --teal: #1bf0da;
   --white: #ffffff;
 }
+
 .artist-input:hover {
   box-shadow: 0 0 20px 0 var(--blue);
   border-radius: 5px;

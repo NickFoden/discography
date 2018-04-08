@@ -7,7 +7,7 @@ class AlbumResults extends Component {
   render() {
     return (
       <div className="album-results-div">
-        {this.props.Albums ? (
+        {this.props.Albums[2] ? (
           <ul className="album-list">
             {this.props.Albums.map((album, index) => (
               <li key={index}>
@@ -52,7 +52,12 @@ class AlbumResults extends Component {
             ))}
           </ul>
         ) : (
-          ""
+          <div>
+            <h4>
+              Welcome! Please enter an artist or band and this app will show you
+              their albums.{" "}
+            </h4>
+          </div>
         )}
       </div>
     );
