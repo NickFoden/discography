@@ -32,6 +32,7 @@ class ArtistSearch extends Component {
             value={this.state.artist}
             onChange={this.handleChange}
           />
+          <button type="submit">Search</button>
         </form>
       </div>
     );
