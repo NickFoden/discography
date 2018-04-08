@@ -1,0 +1,46 @@
+:root {
+  --black: #000000;
+  --blue: #0d10e9;
+  --fadedBlue: #405ccc;
+  --gray: #808080;
+  --lightBlue: #4dd2ff;
+  --lightGray: #d1d4db;
+  --lightOrange: #ffcb25;
+  --lightTeal: #98f0da;
+  --lightLightOrange: #ffde82;
+  --orange: #ffbb3c;
+  --red: #ff190c;
+  --teal: #1bf0da;
+  --white: #ffffff;
+}
+.artist-input:hover {
+  box-shadow: 0 0 20px 0 var(--blue);
+  border-radius: 5px;
+}
+
+.artist-search-div {
+  margin-top: 20px;
+}
+
+.button {
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+  background-color: var(--lightTeal);
+  font-size: 0.75em;
+  box-shadow: 0 0 20px 0 var(--lightTeal);
+}
+
+.button:hover {
+  box-shadow: 0 0 0 0;
+  border-radius: 5px;
+  background-color: var(--lightLightOrange);
+}
+
+.message {
+  text-transform: capitalize;
+  color: var(--fadedBlue);
+}
+
+@media only screen and (min-width: 640px) {
+}

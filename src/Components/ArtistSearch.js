@@ -7,7 +7,8 @@ class ArtistSearch extends Component {
     super(props);
 
     this.state = {
-      artist: ""
+      artist: "",
+      message: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -19,21 +20,41 @@ class ArtistSearch extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    searchArtistAction(this.state.artist);
+    if (this.state.artist === "") {
+      searchArtistAction("Iron Maiden");
+      this.setState({
+        artist: "",
+        message: "UP THE IRONS !"
+      });
+    } else {
+      searchArtistAction(this.state.artist);
+      this.setState({
+        artist: "",
+        message: ""
+      });
+    }
   }
   render() {
     return (
-      <div className="App">
-        <form onSubmit={this.handleSubmit}>
-          <label>Artist Search </label>
-          <input
-            type="text"
-            name="artist"
-            value={this.state.artist}
-            onChange={this.handleChange}
-          />
-          <button type="submit">Search</button>
-        </form>
+      <div>
+        <div className="artist-search-div">
+          <form onSubmit={this.handleSubmit}>
+            <input
+              className="artist-input"
+              size="40"
+              type="text"
+              name="artist"
+              value={this.state.artist}
+              onChange={this.handleChange}
+              placeholder="search for a musician and see their albums"
+            />
+            <button className="button" type="submit">
+              Search
+            </button>
+          </form>
+          <br />
+        </div>
+        <h1 className="message">{this.state.message}</h1>
       </div>
     );
   }
