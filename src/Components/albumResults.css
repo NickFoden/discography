@@ -56,26 +56,4 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
   }
-
-  .album-image {
-    box-shadow: 0 0 10px 0 var(--lightGray);
-    border-radius: 2px;
-  }
-
-  .album-image:hover {
-    box-shadow: 0 0 20px 0 var(--teal);
-    border-radius: 4px;
-    transform: rotate(1deg) scale(1.1);
-  }
-  .album-info-paragraph {
-    font-size: 0.7em;
-    margin-top: -10px;
-  }
-  .album-list a {
-    text-decoration: none;
-    color: var(--black);
-  }
-  .artist-link:hover {
-    color: var(--orange);
-  }
 }
