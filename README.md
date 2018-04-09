@@ -2,7 +2,7 @@
 
 ### What albums were put out by **\_\_** ?
 
-[Discography](https://discography.netlify.com/) is a react app for querying the itunes api for a musician or band and then displaying the Albums related to that artist. Using fetch for api call and redux to pass the albums into global state. Deployed to netlify via the netlify CLI tools. Wanted to add Testing, but today is flying by and my dog is giving me the look.
+[Discography](https://discography.netlify.com/) is a react app for querying the itunes api for a musician or band and then displaying the Albums related to that artist. Using fetch for api call and redux to pass the albums into global state. Deployed to netlify via the netlify CLI tools. 
 
 ![Disco Screen Shot](https://github.com/NickFoden/discography/blob/master/public/discoScreenShot.png?raw=true)
 
