@@ -17,6 +17,7 @@
 .artist-input {
   border-radius: 5px;
   padding: 6px;
+  margin-left: 5px;
 }
 .artist-input:hover {
   box-shadow: 0 0 20px 0 var(--blue);
@@ -49,5 +50,18 @@
 @media only screen and (max-width: 640px) {
   .button {
     margin-left: 5px;
+  }
+  .artist-input {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .button {
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .artist-input {
+    width: 80%;
   }
 }

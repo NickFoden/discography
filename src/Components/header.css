@@ -26,17 +26,17 @@
   text-decoration: none;
   transform: scale(1.1);
 }
-@media only screen and (min-width: 640px) {
-  .header-div a {
-    text-decoration: none;
-    color: black;
-    float: left;
-    margin-left: 20%;
-  }
 
-  /* .header-div a:hover {
-    text-decoration: none;
-    box-shadow: 0 0 20px 0 blue;
-    border-radius: 5px;
-  } */
+@media only screen and (max-width: 710px) {
+  .header-div a {
+    margin-left: 15%;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .header-div a {
+    margin-left: 10%;
+    margin-bottom: 20px;
+  }
 }
