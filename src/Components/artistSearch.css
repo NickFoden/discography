@@ -14,9 +14,12 @@
   --white: #ffffff;
 }
 
+.artist-input {
+  border-radius: 5px;
+  padding: 6px;
+}
 .artist-input:hover {
   box-shadow: 0 0 20px 0 var(--blue);
-  border-radius: 5px;
 }
 
 .artist-search-div {
@@ -24,24 +27,27 @@
 }
 
 .button {
-  padding: 5px;
-  border-radius: 3px;
-  margin-left: 5px;
+  padding: 6px;
+  border-radius: 4px;
+  margin-left: 10px;
   background-color: var(--lightTeal);
   font-size: 0.75em;
-  box-shadow: 0 0 20px 0 var(--lightTeal);
+  box-shadow: 0px 1.5px 0px 0px var(--lightTeal);
 }
 
 .button:hover {
   box-shadow: 0 0 0 0;
   border-radius: 5px;
-  background-color: var(--lightLightOrange);
+  background-color: var(--teal);
 }
 
 .message {
   text-transform: capitalize;
-  color: var(--fadedBlue);
+  color: var(--orange);
 }
 
-/* @media only screen and (min-width: 640px) {
-} */
+@media only screen and (max-width: 640px) {
+  .button {
+    margin-left: 5px;
+  }
+}

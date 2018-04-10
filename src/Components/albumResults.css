@@ -1,10 +1,15 @@
 :root {
   --black: #000000;
   --blue: #0d10e9;
+  --fadedBlue: #405ccc;
   --gray: #808080;
   --lightBlue: #4dd2ff;
   --lightGray: #d1d4db;
+  --lightOrange: #ffcb25;
+  --lightTeal: #98f0da;
+  --lightLightOrange: #ffde82;
   --orange: #ffbb3c;
+  --red: #ff190c;
   --teal: #1bf0da;
   --white: #ffffff;
 }
@@ -22,13 +27,14 @@
 
 .album-image {
   box-shadow: 0 0 10px 0 var(--lightGray);
-  border-radius: 2px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0 0 var(--lightTeal);
 }
 
 .album-image:hover {
   box-shadow: 0 0 20px 0 var(--teal);
-  border-radius: 4px;
-  transform: rotate(1deg) scale(1.1);
+  border-radius: 6px;
+  transform: rotate(1deg) scale(1.25);
 }
 .album-info-paragraph {
   font-size: 0.7em;
